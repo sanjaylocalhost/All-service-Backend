@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -57,7 +56,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/serviceap
 .catch(err => {
   console.error('❌ MongoDB connection error:', err);
   process.exit(1);
-=======
+  
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -116,5 +115,4 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/serviceap
 .catch(err => {
   console.error('❌ MongoDB connection error:', err);
   process.exit(1);
->>>>>>> a18ba91f3770ffa8e1a23a572a2620a6ebd18b38
 });
