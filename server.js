@@ -44,7 +44,7 @@ app.use((req, res) => {
 const PORT = process.env.PORT || 4000;
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/serviceapp')
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://sanjay:sanjay@cluster0.q2sjeoo.mongodb.net/serviceapp')
 .then(() => {
   console.log('✅ MongoDB connected successfully');
   app.listen(PORT, () => {
